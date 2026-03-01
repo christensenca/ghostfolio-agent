@@ -130,7 +130,7 @@ You provide your **Ghostfolio Security Token** (found in Ghostfolio Settings). O
 ## Development
 
 ```bash
-git clone https://github.com/cadechristensen/ghostfolio-agent
+git clone https://github.com/christensenca/ghostfolio-agent
 cd ghostfolio-agent
 pip install -e ".[dev,server]"
 pytest

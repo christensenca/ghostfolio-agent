@@ -55,8 +55,8 @@ dev = [
 ghostfolio-agent = "ghostfolio_agent.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/cadechristensen/ghostfolio-agent"
-Repository = "https://github.com/cadechristensen/ghostfolio-agent"
+Homepage = "https://github.com/christensenca/ghostfolio-agent"
+Repository = "https://github.com/christensenca/ghostfolio-agent"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ghostfolio_agent"]
