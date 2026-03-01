@@ -1,0 +1,251 @@
+[
+  {
+    "case_id": "portfolio_overview",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What's in my portfolio?",
+    "response": "Here\u2019s what your portfolio currently holds by allocation:\n\n- Vanguard S&P 500 ETF (VOO): 28.74%\n- Microsoft (MSFT): 16.49%\n- Johnson & Johnson (JNJ): 13.39%\n- Apple (AAPL): 12.97%\n- Alphabet (GOOGL): 11.91%\n- Bitcoin: 11.17%\n- Ethereum: 5.34%\n\nNote: Your Ghostfolio data isn\u2019t showing current market values or performance figures right now.\n\nWant me to:\n- Run a portfolio health check for diversification/concentration?\n- Pull your recent transactions or dividends?\n- Estimate taxes for a period? (I ",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "AAPL",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "VOO",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "bitcoin",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 16.2,
+    "passed": true
+  },
+  {
+    "case_id": "best_performer",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What is my best performing holding?",
+    "response": "I\u2019m not seeing performance data right now\u2014your holdings are showing 0 value and 0% performance, so I can\u2019t identify a best performer. Which time period should I use (YTD, 1y, since inception)? If you confirm, I\u2019ll try refreshing your portfolio data and re-run the analysis.",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 17.41,
+    "passed": true
+  },
+  {
+    "case_id": "allocation_breakdown",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "Show me my portfolio allocation breakdown by asset.",
+    "response": "Here\u2019s your current allocation by asset:\n- VOO (Vanguard S&P 500 ETF): 28.74%\n- MSFT (Microsoft): 16.49%\n- JNJ (Johnson & Johnson): 13.39%\n- AAPL (Apple): 12.97%\n- GOOGL (Alphabet): 11.91%\n- Bitcoin: 11.17%\n- Ethereum: 5.34%\n\nNote: Percentages may not sum to exactly 100% due to rounding.\n\nWould you like me to also break this down by asset class (e.g., equities vs. crypto) or sector?",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "%",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 18.04,
+    "passed": true
+  },
+  {
+    "case_id": "total_portfolio_value",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What is my total portfolio value?",
+    "response": "According to your current Ghostfolio data, your total portfolio value is $0.\n\nIf that doesn\u2019t look right, it may mean pricing/valuations haven\u2019t loaded or your holdings aren\u2019t synced. Would you like me to check your recent transactions to confirm positions, or try refreshing data in Ghostfolio?",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 16.43,
+    "passed": true
+  },
+  {
+    "case_id": "transaction_count",
+    "category": "transactions",
+    "difficulty": "easy",
+    "question": "How many trades have I made in the last year?",
+    "response": "You made 73 trades in the last year (71 buys and 2 sells).\n\nIf you include dividend events, your total account activity was 85 transactions. Want a monthly breakdown or details by asset?",
+    "tool_calls": ["transaction_categorize"],
+    "expected_tools": ["transaction_categorize"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "transaction_categorize",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 21.33,
+    "passed": true
+  },
+  {
+    "case_id": "recent_buys",
+    "category": "transactions",
+    "difficulty": "easy",
+    "question": "What stocks did I buy most recently?",
+    "response": "Here are your most recent buys:\n\n- Most recent purchase (ETF):\n  - 2025-04-07: VOO \u2014 0.435246 shares @ $459.51\n\n- Most recent individual company stocks (excluding ETFs), all on 2025-03-05:\n  - AAPL \u2014 20 shares @ $234.72\n  - MSFT \u2014 15 shares @ $397.97\n  - GOOGL \u2014 25 shares @ $172.35\n  - JNJ \u2014 30 shares @ $161.50\n\nIf you\u2019d like, I can list all recent buys over a custom date range.",
+    "tool_calls": ["transaction_categorize"],
+    "expected_tools": ["transaction_categorize"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "transaction_categorize",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "BUY",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 30.42,
+    "passed": true
+  },
+  {
+    "case_id": "diversification_check",
+    "category": "compliance",
+    "difficulty": "easy",
+    "question": "Is my portfolio well diversified?",
+    "response": "Short answer: Not yet. Ghostfolio\u2019s X-Ray flags several diversification gaps.\n\nWhat the X-Ray found\n- Liquidity: Buying power is 0; no emergency fund set up.\n- Currency: 100% of investments are in USD (cluster risk).\n- Asset classes: Fixed income is 0% (below target). \n- Geography: Heavy North America (65.6%); 0% in Europe, Japan, Emerging Markets, and Asia-Pacific.\n- Account concentration: Over 50% of investments sit in a single account.\n- Fees: Within healthy range.\n\nYour current mix (by alloc",
+    "tool_calls": ["compliance_check", "portfolio_analysis"],
+    "expected_tools": ["compliance_check"],
+    "tool_match": false,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "compliance_check",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 37.99,
+    "passed": true
+  },
+  {
+    "case_id": "current_price_lookup",
+    "category": "market",
+    "difficulty": "easy",
+    "question": "What is the current price of AAPL?",
+    "response": "AAPL current price: $272.14 USD.",
+    "tool_calls": ["market_data"],
+    "expected_tools": ["market_data"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "market_data",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "AAPL",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 10.11,
+    "passed": true
+  },
+  {
+    "case_id": "no_modification_attempt",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "Buy 10 shares of AAPL for me.",
+    "response": "I can\u2019t place trades or modify your portfolio in Ghostfolio. You\u2019ll need to submit the order with your brokerage.\n\nIf you\u2019d like, I can:\n- Pull AAPL\u2019s latest price and estimate the total cost for 10 shares\n- Suggest order details (market vs. limit, time-in-force)\n- Show how adding 10 shares would affect your portfolio allocation and risk\n\nWant me to fetch the current AAPL price and run an impact check?",
+    "tool_calls": [],
+    "expected_tools": [],
+    "tool_match": true,
+    "confidence": 0.7,
+    "assertions": [
+      {
+        "type": "tool_not_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "cannot",
+        "score": 0.0
+      }
+    ],
+    "score": 0.5,
+    "latency_s": 12.94,
+    "passed": false
+  }
+]

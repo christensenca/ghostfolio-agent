@@ -1,0 +1,169 @@
+{
+  "accounts": [
+    {
+      "id": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "name": "Buy & Hold Portfolio",
+      "currency": "USD",
+      "balance": 0,
+      "platformId": null
+    }
+  ],
+  "activities": [
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-03-05T00:00:00.000Z",
+      "fee": 1.46,
+      "quantity": 20,
+      "symbol": "AAPL",
+      "type": "BUY",
+      "unitPrice": 234.72,
+      "comment": "Initial buy - Buy & Hold strategy"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-03-05T00:00:00.000Z",
+      "fee": 0.54,
+      "quantity": 15,
+      "symbol": "MSFT",
+      "type": "BUY",
+      "unitPrice": 397.97,
+      "comment": "Initial buy - Buy & Hold strategy"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-03-05T00:00:00.000Z",
+      "fee": 0.91,
+      "quantity": 25,
+      "symbol": "GOOGL",
+      "type": "BUY",
+      "unitPrice": 172.35,
+      "comment": "Initial buy - Buy & Hold strategy"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-03-05T00:00:00.000Z",
+      "fee": 0.83,
+      "quantity": 30,
+      "symbol": "JNJ",
+      "type": "BUY",
+      "unitPrice": 161.5,
+      "comment": "Initial buy - Buy & Hold strategy"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-05-15T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 20,
+      "symbol": "AAPL",
+      "type": "DIVIDEND",
+      "unitPrice": 0.26,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-06-03T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 30,
+      "symbol": "JNJ",
+      "type": "DIVIDEND",
+      "unitPrice": 1.24,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-06-12T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 15,
+      "symbol": "MSFT",
+      "type": "DIVIDEND",
+      "unitPrice": 0.75,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-08-14T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 20,
+      "symbol": "AAPL",
+      "type": "DIVIDEND",
+      "unitPrice": 0.26,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-09-02T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 30,
+      "symbol": "JNJ",
+      "type": "DIVIDEND",
+      "unitPrice": 1.24,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-09-11T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 15,
+      "symbol": "MSFT",
+      "type": "DIVIDEND",
+      "unitPrice": 0.75,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-11-14T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 20,
+      "symbol": "AAPL",
+      "type": "DIVIDEND",
+      "unitPrice": 0.26,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-12-02T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 30,
+      "symbol": "JNJ",
+      "type": "DIVIDEND",
+      "unitPrice": 1.24,
+      "comment": "Quarterly dividend"
+    },
+    {
+      "accountId": "da59ef3c-54b4-59ba-9e29-14d23b862202",
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2025-12-11T00:00:00.000Z",
+      "fee": 0,
+      "quantity": 15,
+      "symbol": "MSFT",
+      "type": "DIVIDEND",
+      "unitPrice": 0.75,
+      "comment": "Quarterly dividend"
+    }
+  ]
+}

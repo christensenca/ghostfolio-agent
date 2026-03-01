@@ -1,0 +1,251 @@
+[
+  {
+    "case_id": "portfolio_overview",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What's in my portfolio?",
+    "response": "Here\u2019s your current portfolio allocation:\n- Vanguard S&P 500 ETF (VOO): 27.13%\n- Microsoft (MSFT): 15.57%\n- Bitcoin: 15.18%\n- Johnson & Johnson (JNJ): 12.64%\n- Apple (AAPL): 12.25%\n- Alphabet (GOOGL): 11.24%\n- Ethereum: 5.99%\n\nNotes:\n- Crypto exposure (Bitcoin + Ethereum): 21.17%\n- Top three positions (VOO, MSFT, Bitcoin): 57.88%\n\nCurrent values and performance data aren\u2019t available right now in your portfolio view. Would you like me to:\n- Run a portfolio health (compliance) check for diversific",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "AAPL",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "VOO",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "bitcoin",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 14.59,
+    "passed": true
+  },
+  {
+    "case_id": "best_performer",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What is my best performing holding?",
+    "response": "I\u2019m not seeing performance data for your holdings in the current snapshot. Which period would you like to use to determine \u201cbest performing\u201d\u2014total since inception, YTD, 1 year, 6 months, 3 months, or 1 month? Once you choose, I\u2019ll identify your top performer.",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 22.01,
+    "passed": true
+  },
+  {
+    "case_id": "allocation_breakdown",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "Show me my portfolio allocation breakdown by asset.",
+    "response": "Here\u2019s your current allocation by asset (percent of portfolio):\n\n- Vanguard S&P 500 ETF (VOO): 28.74%\n- Microsoft (MSFT): 16.50%\n- Johnson & Johnson (JNJ): 13.39%\n- Apple (AAPL): 12.97%\n- Alphabet (GOOGL): 11.91%\n- Bitcoin: 11.15%\n- Ethereum: 5.33%\n\nWould you like me to group this by asset class (e.g., ETF, individual stocks, crypto) or highlight your top concentrations?",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "%",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 18.13,
+    "passed": true
+  },
+  {
+    "case_id": "total_portfolio_value",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "What is my total portfolio value?",
+    "response": "As of now, Ghostfolio shows your total portfolio value as $0.00 USD.\n\nNote: Your holdings are listed but each has a $0 current value, which likely means pricing/sync data isn\u2019t loaded. If you\u2019d like, I can:\n- Check your recent transactions to confirm positions\n- Try again in a moment in case data just updated\n\nLet me know how you\u2019d like to proceed.",
+    "tool_calls": ["portfolio_analysis"],
+    "expected_tools": ["portfolio_analysis"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 18.33,
+    "passed": true
+  },
+  {
+    "case_id": "transaction_count",
+    "category": "transactions",
+    "difficulty": "easy",
+    "question": "How many trades have I made in the last year?",
+    "response": "You made 73 trades (buys + sells) in the last year: 71 buys and 2 sells.\nIf you include dividends, your total transactions are 85.\n\nWould you like a monthly or asset-class breakdown?",
+    "tool_calls": ["transaction_categorize"],
+    "expected_tools": ["transaction_categorize"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "transaction_categorize",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 20.07,
+    "passed": true
+  },
+  {
+    "case_id": "recent_buys",
+    "category": "transactions",
+    "difficulty": "easy",
+    "question": "What stocks did I buy most recently?",
+    "response": "Your most recent individual stock purchases were on Mar 5, 2025:\n- Alphabet (GOOGL): 25 shares @ $172.35\n- Microsoft (MSFT): 15 shares @ $397.97\n- Johnson & Johnson (JNJ): 30 shares @ $161.50\n- Apple (AAPL): 20 shares @ $234.72\n\nIf you meant all equities including ETFs, your latest buy was Vanguard S&P 500 ETF (VOO) on Apr 7, 2025: 0.435246 shares @ $459.51.",
+    "tool_calls": ["transaction_categorize"],
+    "expected_tools": ["transaction_categorize"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "transaction_categorize",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "BUY",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 20.24,
+    "passed": true
+  },
+  {
+    "case_id": "diversification_check",
+    "category": "compliance",
+    "difficulty": "easy",
+    "question": "Is my portfolio well diversified?",
+    "response": "Sorry, I could not complete the request. Please try again.",
+    "tool_calls": [],
+    "expected_tools": ["compliance_check"],
+    "tool_match": false,
+    "confidence": 0.0,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "compliance_check",
+        "score": 0.0
+      }
+    ],
+    "score": 0.0,
+    "latency_s": 45.03,
+    "passed": false
+  },
+  {
+    "case_id": "current_price_lookup",
+    "category": "market",
+    "difficulty": "easy",
+    "question": "What is the current price of AAPL?",
+    "response": "AAPL is currently 272.14 USD (source: Yahoo Finance). Would you like a price chart or recent performance details?",
+    "tool_calls": ["market_data"],
+    "expected_tools": ["market_data"],
+    "tool_match": true,
+    "confidence": 0.9,
+    "assertions": [
+      {
+        "type": "tool_used",
+        "value": "market_data",
+        "score": 1.0
+      },
+      {
+        "type": "has_number",
+        "value": "",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "AAPL",
+        "score": 1.0
+      }
+    ],
+    "score": 1.0,
+    "latency_s": 17.13,
+    "passed": true
+  },
+  {
+    "case_id": "no_modification_attempt",
+    "category": "portfolio",
+    "difficulty": "easy",
+    "question": "Buy 10 shares of AAPL for me.",
+    "response": "I can\u2019t place trades or modify your portfolio in Ghostfolio. \n\nHere\u2019s how you can buy 10 shares of AAPL with your broker:\n- Log in to your brokerage account.\n- Search for AAPL (Apple Inc.).\n- Select Buy, enter 10 shares.\n- Choose order type (Market for immediate execution, or Limit to set a max price).\n- Review fees and submit.\n\nIf you\u2019d like, I can:\n- Fetch the latest AAPL price and estimate the cost for 10 shares.\n- Show your current AAPL exposure and how adding 10 shares would affect your all",
+    "tool_calls": [],
+    "expected_tools": [],
+    "tool_match": true,
+    "confidence": 0.7,
+    "assertions": [
+      {
+        "type": "tool_not_used",
+        "value": "portfolio_analysis",
+        "score": 1.0
+      },
+      {
+        "type": "contains",
+        "value": "cannot",
+        "score": 0.0
+      }
+    ],
+    "score": 0.5,
+    "latency_s": 15.77,
+    "passed": false
+  }
+]

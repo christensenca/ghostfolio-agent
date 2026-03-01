@@ -1,0 +1,217 @@
+{
+  "accounts": [
+    {
+      "id": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "name": "Crypto Portfolio",
+      "currency": "USD",
+      "balance": 0,
+      "platformId": null
+    }
+  ],
+  "activities": [
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-03-05T00:00:00.000Z",
+      "fee": 3.81,
+      "quantity": 0.03436,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 87310.81,
+      "comment": "BTC purchase - $3000"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-03-07T00:00:00.000Z",
+      "fee": 3.42,
+      "quantity": 0.6811,
+      "symbol": "ethereum",
+      "type": "BUY",
+      "unitPrice": 2202.32,
+      "comment": "ETH purchase - $1500"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-03-20T00:00:00.000Z",
+      "fee": 3.55,
+      "quantity": 0.011519,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 86815.44,
+      "comment": "BTC purchase - $1000"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-04-10T00:00:00.000Z",
+      "fee": 2.95,
+      "quantity": 0.300746,
+      "symbol": "ethereum",
+      "type": "BUY",
+      "unitPrice": 1662.53,
+      "comment": "ETH purchase - $500"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-04-15T00:00:00.000Z",
+      "fee": 4.51,
+      "quantity": 0.005916,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 84523.45,
+      "comment": "BTC purchase - $500"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-05-10T00:00:00.000Z",
+      "fee": 0.89,
+      "quantity": 0.004856,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 102962.54,
+      "comment": "BTC purchase - $500"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-05-20T00:00:00.000Z",
+      "fee": 1.49,
+      "quantity": 0.118718,
+      "symbol": "ethereum",
+      "type": "BUY",
+      "unitPrice": 2526.99,
+      "comment": "ETH purchase - $300"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-06-15T00:00:00.000Z",
+      "fee": 2.4,
+      "quantity": 0.002844,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 105482.91,
+      "comment": "BTC purchase - $300"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-07-01T00:00:00.000Z",
+      "fee": 3.15,
+      "quantity": 0.08038,
+      "symbol": "ethereum",
+      "type": "BUY",
+      "unitPrice": 2488.19,
+      "comment": "ETH purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-07-20T00:00:00.000Z",
+      "fee": 0.63,
+      "quantity": 0.002544,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 117901.63,
+      "comment": "BTC purchase - $300"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-08-15T00:00:00.000Z",
+      "fee": 1.48,
+      "quantity": 0.001689,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 118405.6,
+      "comment": "BTC purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-08-20T00:00:00.000Z",
+      "fee": 1.03,
+      "quantity": 0.006373,
+      "symbol": "bitcoin",
+      "type": "SELL",
+      "unitPrice": 112778.34,
+      "comment": "Taking 10% BTC profit"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-09-01T00:00:00.000Z",
+      "fee": 4.14,
+      "quantity": 0.045569,
+      "symbol": "ethereum",
+      "type": "BUY",
+      "unitPrice": 4388.93,
+      "comment": "ETH purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-09-15T00:00:00.000Z",
+      "fee": 2.77,
+      "quantity": 0.001733,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 115373.56,
+      "comment": "BTC purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-10-15T00:00:00.000Z",
+      "fee": 0.62,
+      "quantity": 0.001767,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 113156.57,
+      "comment": "BTC purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-11-15T00:00:00.000Z",
+      "fee": 1.39,
+      "quantity": 0.002117,
+      "symbol": "bitcoin",
+      "type": "BUY",
+      "unitPrice": 94456.39,
+      "comment": "BTC purchase - $200"
+    },
+    {
+      "accountId": "c511db3f-9113-5976-8b28-f4c50ba02755",
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2025-12-15T00:00:00.000Z",
+      "fee": 4.22,
+      "quantity": 0.183977,
+      "symbol": "ethereum",
+      "type": "SELL",
+      "unitPrice": 3065.49,
+      "comment": "Taking 15% ETH profit"
+    }
+  ]
+}

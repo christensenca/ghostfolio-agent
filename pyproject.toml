@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ghostfolio-agent"
+version = "0.1.0"
+description = "AI-powered financial assistant for Ghostfolio portfolios"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.11"
+authors = [
+    { name = "Cade Christensen" },
+]
+keywords = ["ghostfolio", "finance", "ai", "agent", "portfolio", "investment"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "langchain>=0.3.25",
+    "langchain-openai>=0.3.18",
+    "langgraph>=0.4.7",
+    "langsmith>=0.3.42",
+    "httpx>=0.28.1",
+    "pandas>=2.2.3",
+    "tabulate>=0.9.0",
+    "yfinance>=1.2.0",
+    "aiosqlite>=0.20.0",
+    "pydantic>=2.11.1",
+    "pydantic-settings>=2.9.1",
+    "PyYAML>=6.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+server = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.6",
+]
+dev = [
+    "pytest>=8.3.2",
+    "pytest-asyncio>=0.24.0",
+    "pytest-cov>=5.0.0",
+    "respx>=0.22.0",
+    "build",
+]
+
+[project.scripts]
+ghostfolio-agent = "ghostfolio_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/cadechristensen/ghostfolio-agent"
+Repository = "https://github.com/cadechristensen/ghostfolio-agent"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ghostfolio_agent"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
